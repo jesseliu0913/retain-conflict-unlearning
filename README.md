@@ -80,6 +80,10 @@ This reports exact-match accuracy and mean answer-token loss. Apply it separatel
 - `cau/objective.py`: activation steering and retain supervision.
 - `cau/train.py`, `cau/evaluate.py`: training and evaluation.
 
-The activation-steering component follows [WMDP's representation-steering formulation](https://github.com/centerforaisafety/wmdp). 
+The activation-steering component follows [WMDP's representation-steering formulation](https://github.com/centerforaisafety/wmdp).
 
-Run the CPU checks with `python -m unittest discover -s tests -v`. They cover selection, masking, variable-length losses, and updates to selected parameters. Full-scale model training is not part of these checks.
+## Tests
+
+```bash
+python -m unittest discover -s tests -v
+```
