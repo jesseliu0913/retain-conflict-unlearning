@@ -2,6 +2,8 @@
 
 Implementation for **When Retain Constraints Conflict: Mitigating Forget-Retain Interference in Tabular Data**.
 
+**Accepted to Findings of EMNLP 2026.**
+
 CAU reduces interference between forget and retain constraints before unlearning. Sample selection removes retain records within the forget distribution's normalized-distance boundary. Feature selection masks retain columns ranked by their absolute standardized mean difference. The training objective combines answer-token activation steering on forget examples with language-model supervision on the selected retain examples.
 
 ## Install
