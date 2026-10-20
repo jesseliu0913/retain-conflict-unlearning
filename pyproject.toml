@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retain-conflict-unlearning"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "Conflict-aware unlearning for tabular data"
+readme = "README.md"
+dependencies = [
+  "torch>=2.5,<3",
+  "numpy>=1.24,<3",
+  "transformers>=4.51,<5",
+  "accelerate>=1,<2"
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.9"]
+prepare = ["sentence-transformers>=3,<6", "scikit-learn>=1.4,<2"]
+
+[tool.setuptools.packages.find]
+include = ["cau*"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
